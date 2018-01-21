@@ -46,9 +46,9 @@ p {
     margin-bottom: 20px;
 }
 
-.wide-space {
+/* .wide-space {
     letter-spacing: 1.6px;
-}
+} */
 
 .icon-lg {
     font-size: 50px;
@@ -178,7 +178,7 @@ footer {
     .navbar-default .nav>li>a:focus {
         color: rgba(255,255,255,0.8);
         padding: 20px;
-        letter-spacing: 1.1px;
+        /* letter-spacing: 1.1px; */
         text-shadow: 1px 1px 1px rgba(60,60,60,0.7);
     }
 
@@ -196,7 +196,7 @@ footer {
         font-size: 15px;
         color: #9c27b0;
         padding: 20px;
-        letter-spacing: 1px;
+        /* letter-spacing: 1px; */
     }
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,

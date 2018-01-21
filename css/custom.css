@@ -7,3 +7,15 @@ body {
     direction: rtl;
     font-family: 'Yekan', Arial, sans-serif;
 }
+
+@media (min-width: 767px) {
+    #video-background {
+        display: inline;
+    }
+}
+
+@media (max-width: 767px) {
+    #video-background {
+        display: none;
+    }
+}
