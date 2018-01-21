@@ -246,26 +246,26 @@
                     <div>
                             <p>و یا همین‌جا برای ما پیام ارسال کنید</p>
                     </div>
-                    <form class="contact-form row" action="https://formspree.io/sakhtaar@outlook.com">
+                    <form class="contact-form row" action="https://formspree.io/sakhtaar@outlook.com" method="POST">
                         <div class="col-md-4">
                             <label></label>
-                            <input type="text" class="form-control" placeholder="نام">
+                            <input type="text" class="form-control" placeholder="نام" name="name">
                         </div>
                         <div class="col-md-4">
                             <label></label>
-                            <input type="text" class="form-control" placeholder="ایمیل">
+                            <input type="text" class="form-control" placeholder="ایمیل" name="_replyto">
                         </div>
                         <div class="col-md-4">
                             <label></label>
-                            <input type="text" class="form-control" placeholder="شماره تماس (دلخواه)">
+                            <input type="text" class="form-control" placeholder="شماره تماس (دلخواه)" name="phoneNumber">
                         </div>
                         <div class="col-md-12">
                             <label></label>
-                            <textarea class="form-control" rows="9" placeholder="پیام شما ..."></textarea>
+                            <textarea class="form-control" rows="9" placeholder="پیام شما ..." name="message"></textarea>
                         </div>
                         <div class="col-md-4 col-md-offset-4">
                             <label></label>
-                            <button type="button" data-toggle="modal" data-target="#alertModal" class="btn btn-primary btn-block btn-lg">ارسال <i class="ion-android-arrow-back"></i></button>
+                            <input type="submit" data-toggle="modal" data-target="#sentModal" class="btn btn-primary btn-block btn-lg" value="ارسال">
                         </div>
                     </form>
                 </div>
@@ -324,6 +324,19 @@
         		<button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true"> قبولتون دارم </button>
         	</div>
         </div>
+        </div>
+    </div>
+
+    <div id="sentModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h2 class="text-center">ارسال شد!</h2>
+                    <p class="text-center">تشکر! پیام شما با موفقیت ارسال شد. در اسرع وقت پاسخگوی شما خواهیم بود.</p>
+                    <br/>
+                    <button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">باشه <i class="ion-android-close"></i></button>
+                </div>
+            </div>
         </div>
     </div>
     <div id="alertModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
